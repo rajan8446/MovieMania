@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo3 from '../image/logo3.png';
-import profile from '../image/profile.png';
+import profile1 from '../image/profile1.png';
 import { auth } from '../Firebase/firebase';
 import '../css/navbar.css'
 
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className={`nav ${show && "nav_black"}`}>
         <div className='nav_container'>
             <img src={logo3} className='logo'/>
-            <img src={profile} onClick={()=>auth.signOut()} className='profile'/>
+            <img src={profile1} onClick={()=>auth.signOut()} className='profile'/>
         </div>
     </div>
   )
